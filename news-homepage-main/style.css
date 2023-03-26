@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+nav{
+    padding: 10px 20px;
+}
+nav > img{
+    display:inline-block;
+    line-height: 50px;
+}
+ul{
+    float: right;
+}
+ul > li{
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 15px;
+}
+ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+ul > li > a:hover{
+    color: gold;
+    transition: 0.5s;
+}
+.menu{
+    display: none;
+    float: right;
+}
+.menu-close{
+    width: 30px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.main1{
+    margin: 30px 0;
+}
+.desktopimg{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.header1{
+    font-size: 66px;
+}
+.para1{
+    padding: 20px 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.btn1{
+    display: block;
+    padding: 10px 40px;
+    background-color: rgb(2, 2, 43);
+    color: white;
+    font-size: 22px;
+    border: none;
+    margin-bottom: 15px;
+}
+.fourth{
+    background-color: rgb(2, 2, 43);
+    color: white;
+    padding: 20px 50px;
+}
+.fourth > h1{
+    color: gold;
+    margin-bottom: 45px;
+}
+.fourth > h3{
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+.fourth > h3:hover{
+    color: gold;
+    transition: 0.5s;
+}
+hr{
+    margin-bottom: 30px;
+}
+.fourth > p{
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+.mini1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.mini1 > span > img{
+    width: 120px;
+}
+.para2{
+    padding:0 20px;
+}
+.para2 > h1{
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+.para2 > h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.para2 > h3:hover{
+    color: rgb(204, 9, 9);
+    transition: 0.5s;
+}
+@media(max-width:760px){
+    .menu{
+        display: block;
+    }
+    .menu-open{
+        width: 30px;
+        height: 30px;
+        margin-top: 7px;
+    }
+    ul{
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        z-index: 2;
+        background-color: white;
+        padding: 20px 10px;
+        transition: 1s;
+    }
+    ul > li{
+        display: block;
+    }
+}
